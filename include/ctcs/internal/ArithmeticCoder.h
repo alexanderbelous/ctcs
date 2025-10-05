@@ -12,10 +12,6 @@ namespace ctcs::ArithmeticCoding_NS
 
 // Arithmetic coding allows mutable models, as long as the changes are synchronized
 // during encoding and decoding (e.g., as in adaptive arithmetic coding).
-//
-// In laconia I utilize this fact to the maximum - not only the frequencies will
-// be updated, but the *alphabet itself* will change between calls to encode():
-// fiirst, we encode the PartOfSpeech, then LexemeID, then InflectionForm, etc.
 class ArithmeticCoder
 {
 public:
