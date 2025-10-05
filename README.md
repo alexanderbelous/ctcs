@@ -16,7 +16,7 @@ Consider better alternatives:
 Still not convinced? OK:
 
 ```cpp
-#include <ctcs/ctcs>
+#include <ctcs/ctcs.h>
 
 std::string_view getBigString()
 {
