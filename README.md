@@ -20,7 +20,8 @@ Still not convinced? OK:
 
 std::string_view getBigString()
 {
-  // A decent compile will detect that the string literal is not used at runtime and can be compiled out.
+  // A decent compiler will detect that the string literal is not used at runtime
+  // and can be compiled away.
   // The compressed string is decompressed at runtime the first time this function is called.
   static const std::string kStr = ctcs::compress<
     "All work and no play makes Jack a dull boy\n"
